@@ -1,0 +1,153 @@
+/* ================= 1. PROJECT'S VARIABLES ================== */
+
+:root {
+    --primary-color: #16A6DE;
+    --secondary-color: #FF6538;
+    --accent-color: #207A35;
+    --dark-color: #20252B;
+    --text-color: #555555;
+    --white-color: #FFFFFF;
+    --font-main: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-seri;
+}
+
+
+/* ================= 2. INITIATION ======================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--text-color);
+    background-color: var(--white-color);
+}
+
+
+/* ==================== 3. HEADER ================== */
+
+.header {
+    width: 100%;
+    background-color: var(--white-color);
+    border-bottom: 1px solid #EEEEEE;
+}
+
+
+/* ================= 4. NAVIGATION =================== */
+
+.navbarr {
+    max-width: 1200;
+    margin: 0 auto;
+    padding: 12px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* ===================== 5. LOGO ======================== */
+
+.logow img {
+    width: 75px;
+    height: auto;
+    display: block;
+}
+
+
+/* ========================== 5. MENU ========================== */
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--dark-color);
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: var(--primary-color);
+}
+
+
+/* ==================== 7. BUTTONS ===========================  */
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.login-btn,
+.register-btn {
+    text-decoration: none;
+    padding: 11px 17px;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.login-btn {
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.login-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.register-btn {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    border: 1px solid var(--secondary-color);
+}
+
+.register-btn:hover {
+    background-color: #E94E25;
+}
+
+
+/* ========================= 1. CONTENU DE NAVIGATION===================== */
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    margin-left: 35px;
+    gap: -30px;
+}
+
+
+/* =========================2. BUTTON HAMBURGER ===================== */
+
+.menu-toggle {
+    display: none;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: var(--dark-color);
+    transition: all 0.3s ease;
+}

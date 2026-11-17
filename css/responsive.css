@@ -1,0 +1,44 @@
+/* ======================== RESPONSIVE HERO ================================ */
+
+@media screen and (max-width: 900px) {
+    .hero {
+        padding: 50px 20px;
+    }
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+    .hero-content {
+        max-width: 100%;
+        text-align: center;
+    }
+    .hero-content P {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .hero-image {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .hero-image img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+}
+@media (max-width: 900px) {
+    .instructors-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .instructors-grid {
+        grid-template-columns: 1fr;
+    }
+}

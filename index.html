@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WAKEON-LAB | Learn and Grow</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="../assets/images/logow.png">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+</head>
+
+<body>
+
+    <!-- =========== HEADER ================ -->
+    <header class="header">
+        <nav class="navbarr">
+
+            <!-- ======== LOGO ================= -->
+            <div class="logow" id="logow">
+                <a href="index.html"> <img src="/assets/images/logow.png" alt="Logo WAKEON-LAB"></a>
+            </div>
+
+            <!-- ============== BUTTON HAMBURGER ==================== -->
+            <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-content">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+             </button>
+
+            <!-- ==========CONTENU DE NAVIGATION (MENU) ================ -->
+            <div class="nav-content" id="nav-content">
+
+                <ul class="nav-menu">
+
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="./pages/courses.html">Courses</a></li>
+                    <li><a href="./pages/about.html">About Us</a></li>
+                    <li><a href="./pages/blog.html">Blog</a></li>
+                    <li><a href="./pages/instructors.html">Instructors</a></li>
+                    <li><a href="./pages/contact.html">Contact</a></li>
+                </ul>
+
+                <div class="nav-buttons">
+                    <a href="signin.html" class="login-btn"> Sign in </a>
+
+                    <a href="register.html" class="register-btn">Create account</a>
+
+                </div>
+        </nav>
+
+        </div>
+
+    </header>
+    <main>
+        <!--====================HERO SECTION=====================-->
+        <section class="hero">
+
+            <div class="hero-container">
+
+                <!-- ========= LEFT CONTENT ============ -->
+
+                <div class="hero-content">
+                    <span class="hero-label">
+                LEARN * GROW * SUCCEED
+
+             </span>
+                    <h1>
+                        The biggest dream <span>starts here</span>
+                    </h1>
+
+                    <p>
+                        Discover new skills, learn from experienced instructors and build the future you deserve.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="pages/courses.html" class="btn-primary">Explore Courses</a>
+                        <a href="pages/about.html" class="btn-secondary">Discover More</a>
+                    </div>
+
+                </div>
+
+                <!-- ==================== RIGHT IMAGE =========================== -->
+                <div class="hero-image">
+
+                    <img src="assets/images/hero-learning.jpg" alt="Student learning online">
+
+                </div>
+            </div>
+
+        </section>
+        <!-- ================================= CATEGORIES SECTIONS================================= -->
+
+        <!-- CATEGORIES SECTION -->
+
+        <section class="categories">
+
+            <div class="section-container">
+
+                <!-- SECTION TITLE -->
+
+                <div class="section-heading">
+
+                    <span>EXPLORE OUR CATEGORIES</span>
+
+                    <h2>
+                        Discover your next
+                        <span>learning journey</span>
+                    </h2>
+
+                    <p>
+                        Choose your field and start developing the skills that will shape your future.
+                    </p>
+
+                </div>
+
+                <!-- CATEGORY CARDS -->
+
+                <div class="category-grid">
+
+                    <article class="category-card">
+
+                        <div class="category-icon">
+                            💻
+                        </div>
+
+                        <h3>Programming</h3>
+
+                        <p>
+                            Learn web development, Python and software engineering.
+                        </p>
+
+                        <a href="courses.html">
+                    Explore courses →
+                </a>
+
+                    </article>
+
+                    <article class="category-card">
+
+                        <div class="category-icon">
+                            🔐
+                        </div>
+
+                        <h3>Cybersecurity</h3>
+
+                        <p>
+                            Discover network security, ethical hacking and protection.
+                        </p>
+
+                        <a href="courses.html">
+                    Explore courses →
+                </a>
+
+                    </article>
+
+                    <article class="category-card">
+
+                        <div class="category-icon">
+                            🎨
+                        </div>
+
+                        <h3>Graphic Design</h3>
+
+                        <p>
+                            Develop your creativity and master digital design.
+                        </p>
+
+                        <a href="courses.html">
+                    Explore courses →
+                </a>
+
+                    </article>
+
+                    <article class="category-card">
+
+                        <div class="category-icon">
+                            🚀
+                        </div>
+
+                        <h3>Business</h3>
+
+                        <p>
+                            Learn entrepreneurship, management and marketing.
+                        </p>
+
+                        <a href="courses.html">
+                    Explore courses →
+                </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =============================== POPULAR COURSES ========================================== -->
+
+        <section class="popular-courses">
+            <div class="section-container">
+
+                <div class="section-heading">
+
+                    <span>
+                OUR POPULAR COURSES
+            </span>
+                    <h2>
+                        Learn skills that <span>move you forward</span>
+                    </h2>
+                    <p>Explore our most popular courses and start learning today.
+                    </p>
+
+                </div>
+
+                <!-- =============== JacaScript will generate the cards here=============== -->
+
+                <div class="course-grid" id="course-grid">
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ============================ WHY CHOOSE WAKEON-LAB ========================= -->
+
+
+        <section class="why-choose">
+
+            <div class="section-container">
+
+                <div class="section-heading">
+
+                    <span>WHY CHOOSE US</span>
+
+                    <h2>Why learn with <span>Wakeon-Lab?</span></h2>
+
+                    <p>
+                        We provide everything you need to develop your skills and achieve your professional goals.
+                    </p>
+
+                </div>
+
+                <div class="features-grid">
+
+                    <!-- ======= Feature 1 ======= -->
+                    <article class="feature-card">
+
+                        <div class="feature-icon">
+                            🎓
+                        </div>
+
+                        <h3>Expert Instructors</h3>
+
+                        <p>
+                            Learn from experienced professionals who share their knowledge and expertise.
+                        </p>
+
+                    </article>
+
+                    <!--====== Feature 2 ======== -->
+                    <article class="feature-card">
+
+                        <div class="feature-icon">
+                            💻
+                        </div>
+
+                        <h3>Practical Learning</h3>
+
+                        <p>
+                            Develop real-world skills through practical exercises and projects.
+                        </p>
+
+                    </article>
+
+                    <!--====== Feature 3 ==========-->
+                    <article class="feature-card">
+
+                        <div class="feature-icon">
+                            ⏰
+                        </div>
+
+                        <h3>Flexible Learning</h3>
+
+                        <p>
+                            Learn anytime and anywhere according to your own schedule.
+                        </p>
+
+                    </article>
+
+                    <!-- ========= Feature 4 =============-->
+                    <article class="feature-card">
+
+                        <div class="feature-icon">
+                            🚀
+                        </div>
+
+                        <h3>Career Growth</h3>
+
+                        <p>
+                            Improve your professional skills and prepare for new opportunities.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ====================== SECTION PROFILS INSTRUCTORS ======================== -->
+
+
+
+        <section class="instructors">
+
+            <div class="section-container">
+
+                <div class="section-heading">
+
+                    <span>MEET OUR TEAM</span>
+
+                    <h2>Learn from our <span>expert instructors</span></h2>
+
+                    <p>
+                        Meet the professionals who will guide you throughout your learning journey.
+                    </p>
+
+                </div>
+
+                <div class="instructors-grid">
+
+                    <!-- Instructor 1 -->
+                    <article class="instructor-card">
+
+                        <div class="instructor-image">
+                            <img src="assets/images/instructors/instructor-1.jpg" alt="Samuel Fwamba">
+                        </div>
+
+                        <div class="instructor-content">
+                            <h3>Samuel FWAMBA</h3>
+                            <p>Web Development Expert</p>
+                            <div class="instructor-socials">
+                                <a href="#" aria-label="Samuel FWAMBA on LinkedIn">in</a>
+                                <a href="#" aria-label=" Samuel FWAMBA on Facebook">f</a>
+                                <a href="#" aria-label=" Samuel FWAMBA on X">x</a>
+
+                            </div>
+                        </div>
+
+                    </article>
+
+                    <!-- Instructor 2 -->
+                    <article class="instructor-card">
+
+                        <div class="instructor-image">
+                            <img src="assets/images/instructors/instructor-2.jpg" alt="Sarah Lolango">
+                        </div>
+
+                        <div class="instructor-content">
+                            <h3>Sarah LOLANGO</h3>
+                            <p>Graphic Design Expert</p>
+                            <div class="instructor-socials">
+                                <a href="#" aria-label="Sarah LOLANGO on LinkedIn">in</a>
+                                <a href="#" aria-label=" Sarah LOLANGO on Facebook">f</a>
+                                <a href="#" aria-label=" Sarah LOLANGO on X">x</a>
+
+                            </div>
+                        </div>
+
+                    </article>
+
+                    <!-- Instructor 3 -->
+                    <article class="instructor-card">
+
+                        <div class="instructor-image">
+                            <img src="assets/images/instructors/instructor-3.jpg" alt="Arnaud MalandaA">
+                        </div>
+
+                        <div class="instructor-content">
+                            <h3>Arnaud MALANDA</h3>
+                            <p>Cybersecurity Expert</p>
+                            <div class="instructor-socials">
+                                <a href="#" aria-label="Arnaud MALANDA on LinkedIn">in</a>
+                                <a href="#" aria-label=" Arnaud MALANDA on Facebook">f</a>
+                                <a href="#" aria-label=" Arnaud MALANDA on X">x</a>
+
+                            </div>
+
+                    </article>
+
+                    <!-- Instructor 4 -->
+                    <article class="instructor-card">
+
+                        <div class="instructor-image">
+                            <img src="assets/images/instructors/instructor-4.jpg" alt="Benazir Matuzeyi">
+                        </div>
+
+                        <div class="instructor-content">
+                            <h3>Benazir MATUZEYI</h3>
+                            <p>Business Development Expert</p>
+                            <div class="instructor-socials">
+                                <a href="#" aria-label=" Benazir MATUZEY on LinkedIn">in</a>
+                                <a href="#" aria-label=" Benazir MATUZEY on Facebook">f</a>
+                                <a href="#" aria-label=" Benazir MATUZEY on X">x</a>
+
+                            </div>
+                        </div>
+
+                    </article>
+
+                    </div>
+
+                </div>
+
+        </section>
+
+
+        <!-- ================================= TESTIMONIALS SECTION  =========================================== -->
+
+        <section class="testimonials">
+
+            <div class="section-container">
+
+                <div class="section-heading">
+
+                    <span>STUDENT TESTIMONIALS</span>
+
+                    <h2>What our students <span>say about us</span></h2>
+
+                    <p>
+                        Discover how Wakeon-Lab is helping students develop their skills and achieve their goals.
+                    </p>
+
+                </div>
+
+                <div class="testimonials-grid">
+
+                    <!-- Testimonial 1 -->
+                    <article class="testimonial-card">
+
+                        <div class="testimonial-stars">
+                            ★★★★★
+                        </div>
+
+                        <p class="testimonial-text">
+                            Wakeon-Lab helped me improve my web development skills. The courses are practical and easy to follow.
+                        </p>
+
+                        <div class="student-info">
+
+                            <img src="assets/images/students/student-1.jpg" alt="Student James">
+
+                            <div>
+                                <h3>James Ulimwengu</h3>
+                                <span>Web Development Student</span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- Testimonial 2 -->
+                    <article class="testimonial-card">
+
+                        <div class="testimonial-stars">
+                            ★★★★★
+                        </div>
+
+                        <p class="testimonial-text">
+                            The cybersecurity lessons are well organized. I learned useful skills that I can apply in real projects.
+                        </p>
+
+                        <div class="student-info">
+
+                            <img src="assets/images/students/student-2.jpg" alt="Student Sarah">
+
+                            <div>
+                                <h3>Maat Wakengela</h3>
+                                <span>Cybersecurity Student</span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- Testimonial 3 -->
+                    <article class="testimonial-card">
+
+                        <div class="testimonial-stars">
+                            ★★★★★
+                        </div>
+
+                        <p class="testimonial-text">
+                            I really appreciate the flexibility of learning. I can study at my own pace and improve every day.
+                        </p>
+
+                        <div class="student-info">
+
+                            <img src="assets/images/students/student-3.jpg" alt="Student Michael">
+
+                            <div>
+                                <h3>Jeancy Lutaladio</h3>
+                                <span>Graphic Design Student</span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+
+        <!-- ===========================  NEWSLETTER SECTION ========================================= -->
+
+        <section class="newsletter">
+
+            <div class="newsletter-content">
+
+                <span class="subtitle">STAY CONNECTED</span>
+
+                <h2>Subscribe to Our Newsletter</h2>
+
+                <p>
+                    Get the latest courses, learning resources and technology updates directly in your inbox.
+                </p>
+
+                <form class="newsletter-form">
+
+                    <input type="email" placeholder="Enter your email address" required>
+
+                    <button type="submit">
+                Subscribe
+            </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+
+
+        <!-- ====================== FOOTER SECTION======================= -->
+
+        <footer class="footer">
+
+            <div class="footer-container">
+
+                <!-- Brand -->
+                <div class="footer-column footer-brand">
+
+                    <h2>Wakeon-Lab</h2>
+
+                    <p>
+                        Empowering learners through technology, innovation and quality education.
+                    </p>
+
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Instagram</a>
+                    </div>
+
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-column">
+
+                    <h3>Quick Links</h3>
+
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+
+                </div>
+
+                <!-- Services -->
+                <div class="footer-column">
+
+                    <h3>Our Services</h3>
+
+                    <ul>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Cybersecurity</a></li>
+                        <li><a href="#">Cloud Computing</a></li>
+                        <li><a href="#">Artificial Intelligence</a></li>
+                    </ul>
+
+                </div>
+
+                <!-- Contact -->
+                <div class="footer-column">
+
+                    <h3>Contact Us</h3>
+
+                    <ul>
+                        <li>Email: info@wakeonlab.com</li>
+                        <li>Phone: +254 XXX XXX XXX</li>
+                        <li>Location: Nairobi, Kenya</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 Wakeon-Lab. All Rights Reserved.
+                </p>
+
+            </div>
+
+        </footer>
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/courses.js"></script>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
+
+</html>
